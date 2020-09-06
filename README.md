@@ -99,6 +99,11 @@ g:bracey_refresh_on_save
 * (false: 0, true: 1) whether or not to reload the current web page whenever its corresponding buffer is written
 
 ```
+g:bracey_refresh_js_files_on_save
+```
+**default:** 0
+* (false: 0, true: 1) whether or not to reload the current web page whenever its corresponding javascript buffer is written. **Note** disabling `g:bracey_eval_on_save` will reduce reloading more than once
+```
 g:bracey_eval_on_save
 ```
 **default:** 1

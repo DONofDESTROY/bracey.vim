@@ -70,6 +70,9 @@ function! bracey#setupHandlers()
 	if g:bracey_refresh_on_save
 		autocmd BufWritePost *.html call bracey#reload()
 	endif
+	if g:bracey_refresh_js_files_on_save
+		autocmd BufWritePost *.js call bracey#reload()
+	endif
 	autocmd VimLeave * call bracey#stop()
 endfunction
 

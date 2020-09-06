@@ -33,6 +33,10 @@ if !exists("g:bracey_refresh_on_save")
 	let g:bracey_refresh_on_save = 0
 endif
 
+if !exists("g:bracey_refresh_js_files_on_save")
+	let g:bracey_refresh_js_files_on_save = 0
+endif
+
 if !exists("g:bracey_auto_start_browser")
 	let g:bracey_auto_start_browser = 1
 endif
